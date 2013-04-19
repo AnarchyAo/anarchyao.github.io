@@ -650,6 +650,7 @@ body {
 
 .front {
     overflow: hidden;
+    background-color: #222;
 }
 
 .front .content,
