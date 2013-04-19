@@ -692,6 +692,18 @@ body {
     background-color: #3B5998;
 }
 
+.menu:hover,
+.twitter:hover,
+.facebook:hover {
+    width: 200px;
+}
+
+.menu:hover + .videoplayer,
+.twitter:hover + .videoplayer,
+.facebook:hover + .videoplayer {
+    padding-left: 200px;
+}
+
 .videoplayer {
     padding: 0 300px 0 150px;
 }
