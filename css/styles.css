@@ -649,60 +649,28 @@ body {
 }
 
 .front .content,
-.wrap,
-.left,
-.right {
+.menu,
+.twitter,
+.facebook,
+.chat {
     height: 100%;
 }
 
-.wrap {
-  background: #ddd;
+.menu,
+.twitter,
+.facebook {
+    float: left;
+    width: 50px;
 }
 
-.left,
-.right {
-  width: 50px;
-  background: #eee;
+.videoplayer {
+    padding: 0 300px 0 150px;
 }
 
-.left {
-  float: left;
-  text-align: left;
+.chat {
+    width: 300px;
 }
 
-.right {
-  float:right;
-  text-align: right;
-}
-
-.left:hover,
-.right:hover {
-  width: 200px;
-}
-
-.middle {
-    height: 100%;
-    padding: 0 50px;
-}
-
-.left:hover + .middle {
-    padding-left: 200px;
-}
-
-.right:hover + .middle {
-    padding-right: 200px;
-}
-
-.middle-top {
-    height: 100%;
-    padding-bottom: 300px;
-}
-
-.middle-bottom {
-    height: 300px;
-    position: absolute;
-    bottom: 0;
-}
 
 
 
