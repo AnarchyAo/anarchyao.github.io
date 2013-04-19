@@ -695,13 +695,13 @@ body {
 .menu:hover,
 .twitter:hover,
 .facebook:hover {
-    width: 200px;
+    width: 300px;
 }
 
 .menu:hover + .videoplayer,
 .twitter:hover + .videoplayer,
 .facebook:hover + .videoplayer {
-    padding-left: 200px;
+    padding-left: 400px;
 }
 
 .videoplayer {
