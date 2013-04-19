@@ -659,10 +659,6 @@ body {
   background: #ddd;
 }
 
-.middle {
-  display: inline-block;
-}
-
 .left,
 .right {
   width: 50px;
