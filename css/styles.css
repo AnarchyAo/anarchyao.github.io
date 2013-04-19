@@ -643,6 +643,10 @@ body {
     height: 100%;
 }
 
+.front .content {
+    height: 100%;
+}
+
 .colmask {
     clear: both;
     float: left;
