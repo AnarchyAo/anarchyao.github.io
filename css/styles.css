@@ -659,12 +659,6 @@ body {
   background: #ddd;
 }
 
-.middle,
-.left,
-.right {
-    padding: 10px;
-}
-
 .middle {
   display: inline-block;
 }
