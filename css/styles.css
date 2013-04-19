@@ -652,7 +652,8 @@ body {
 .menu,
 .twitter,
 .facebook,
-.chat {
+.chat,
+.videoplayer {
     height: 100%;
 }
 
