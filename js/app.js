@@ -1,5 +1,9 @@
-$('.js-toggle').toggle(function() {
-  $('.js-toggle').animate({width:'300px'});
+$(".js-toggle").toggle(function() {
+    $(this).stop().animate({
+        width: "300px",
+    }, 500);
 }, function() {
-  $('.js-toggle').animate({width:'50px'});
+    $(this).stop().animate({
+        width: "50px",
+    }, 500);
 });
