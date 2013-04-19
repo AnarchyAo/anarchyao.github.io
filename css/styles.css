@@ -665,6 +665,12 @@ h1 {
     margin-top: 0em;
 }
 
+.content .quack {
+    font-family: serif;
+    font-style: italic;
+    margin-top: 5em;
+}
+
 
 
 
