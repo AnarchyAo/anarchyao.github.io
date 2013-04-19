@@ -639,7 +639,7 @@ textarea {
 
 * {
   box-sizing: border-box;
-  transition: width .5s;
+  transition: width .5s, padding .5s;
 }
 
 
@@ -665,11 +665,6 @@ body {
   background: #eee;
 }
 
-.left:hover,
-.right:hover {
-  width: 200px;
-}
-
 .left {
   float: left;
   text-align: left;
@@ -680,8 +675,22 @@ body {
   text-align: right;
 }
 
+.left:hover,
+.right:hover {
+  width: 200px;
+}
+
 .middle {
     height: 100%;
+    padding: 0 50px;
+}
+
+.left:hover + .middle {
+    padding-left: 200px;
+}
+
+.right:hover + .middle {
+    padding-right: 200px;
 }
 
 .middle-top {
