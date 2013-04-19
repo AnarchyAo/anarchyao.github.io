@@ -638,6 +638,11 @@ table {
 
 
 
+html,
+body {
+    height: 100%;
+}
+
 .colmask {
     position: relative;
     clear: both;
