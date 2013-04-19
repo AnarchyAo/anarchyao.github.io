@@ -644,63 +644,72 @@ body {
 }
 
 .colmask {
-    position:relative;      /* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
-    clear:both;
-    float:left;
-    width:100%;             /* width of whole page */
-    overflow:hidden;        /* This chops off any overhanging divs */
+    clear: both;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .threecol {
-    background:#ff9;        /* Right column background colour */
+    background: #ff9;
 }
-.threecol .colmid {
-    float:left;
-    width:200%;
-    margin-left:-200px;     /* Width of right column */
-    position:relative;
-    right:100%;
-    background:#fff;        /* Centre column background colour */
-}
-.threecol .colleft {
-    float:left;
-    width:100%;
-    margin-left:-50%;
-    position:relative;
-    left:400px;             /* Left column width + right column width */
-    background:#FFD8B7;     /* Left column background colour */
-}
+
 .threecol .col1wrap {
-    float:left;
-    width:50%;
-    position:relative;
-    right:200px;            /* Width of left column */
-    padding-bottom:1em;     /* Centre column bottom padding. Leave it out if it's zero */
+    float: left;
+    padding-bottom: 1em;
+    position: relative;
+    right: 200px;
+    width: 50%;
 }
+
+.threecol .colleft {
+    background: #FFD8B7;
+    float: left;
+    height: 100%;
+    left: 400px;
+    margin-left: -50%;
+    position: relative;
+    width: 100%;
+}
+
+.threecol .colmid {
+    background: #fff;
+    float: left;
+    height: 100%;
+    margin-left: -200px;
+    position: relative;
+    right: 100%;
+    width: 200%;
+}
+
 .threecol .col1 {
-    margin:0 215px;         /* Centre column side padding:
-                            Left padding = left column width + centre column left padding width
-                            Right padding = right column width + centre column right padding width */
-    position:relative;
-    left:200%;
-    overflow:hidden;
+    left: 200%;
+    margin: 0 215px;
+    overflow: hidden;
+    position: relative;
 }
-.threecol .col2 {
-    float:right;
-    width:170px;            /* Width of left column content (left column width minus left and right padding) */
-    position:relative;
-    right:15px;             /* Width of the left-had side padding on the left column */
-}
+
 .threecol .col3 {
-    float:right;
-    width:170px;            /* Width of right column content (right column width minus left and right padding) */
-    margin-right:45px;      /* Width of right column right-hand padding + left column left and right padding */
-    position:relative;
-    left:50%;
+    float: right;
+    left: 50%;
+    margin-right: 45px;
+    width: 170px;
+}
+
+.threecol .col2 {
+    float: right;
+    position: relative;
+    right: 15px;
+    width: 170px;
 }
 
 footer {
-    position: absolute;  bottom: 0;  width: 50%;  margin: 0 25%;
+    bottom: 0;
+    margin: 0 25%;
+    position: absolute;
+    width: 50%;
 }
 
 
