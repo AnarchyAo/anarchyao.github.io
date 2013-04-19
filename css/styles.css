@@ -644,53 +644,59 @@ body {
 }
 
 .colmask {
-    position: relative;
-    clear: both;
-    float: left;
-    width: 100%;
-    overflow: hidden;
-}
-
-.colright,
-.colmid,
-.colleft {
-    float: left;
-    width: 100%;
-    position: relative;
-}
-
-.col1,
-.col2,
-.col3 {
-    float: left;
-    position: relative;
-    padding: 0 0 1em 0;
-    overflow: hidden;
+    position:relative;      /* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+    clear:both;
+    float:left;
+    width:100%;             /* width of whole page */
+    overflow:hidden;        /* This chops off any overhanging divs */
 }
 
 .threecol {
-    background:#eee;
+    background:#ff9;        /* Right column background colour */
 }
 .threecol .colmid {
-    right: 25%;       /* Width of the right column */
-    background: #fff; /* center column background colour */
+    float:left;
+    width:200%;
+    margin-left:-200px;     /* Width of right column */
+    position:relative;
+    right:100%;
+    background:#fff;        /* Centre column background colour */
 }
 .threecol .colleft {
-    right:50%;        /* Width of the middle column */
-    background:#eee;  /* left column background colour */
+    float:left;
+    width:100%;
+    margin-left:-50%;
+    position:relative;
+    left:400px;             /* Left column width + right column width */
+    background:#FFD8B7;     /* Left column background colour */
+}
+.threecol .col1wrap {
+    float:left;
+    width:50%;
+    position:relative;
+    right:200px;            /* Width of left column */
+    padding-bottom:1em;     /* Centre column bottom padding. Leave it out if it's zero */
 }
 .threecol .col1 {
-    width:46%;        /* Width of center column content (column width minus padding on either side) */
-    left:102%;        /* 100% plus left padding of center column */
+    margin:0 215px;         /* Centre column side padding:
+                            Left padding = left column width + centre column left padding width
+                            Right padding = right column width + centre column right padding width */
+    position:relative;
+    left:200%;
+    overflow:hidden;
 }
 .threecol .col2 {
-    width:21%;        /* Width of left column content (column width minus padding on either side) */
-    left:31%;         /* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+    float:right;
+    width:170px;            /* Width of left column content (left column width minus left and right padding) */
+    position:relative;
+    right:15px;             /* Width of the left-had side padding on the left column */
 }
 .threecol .col3 {
-    width:21%;        /* Width of right column content (column width minus padding on either side) */
-    left:85%;         /* Please make note of the brackets here:
-                         (100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+    float:right;
+    width:170px;            /* Width of right column content (right column width minus left and right padding) */
+    margin-right:45px;      /* Width of right column right-hand padding + left column left and right padding */
+    position:relative;
+    left:50%;
 }
 
 footer {
