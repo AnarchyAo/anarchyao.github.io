@@ -680,6 +680,20 @@ body {
   text-align: right;
 }
 
+.middle {
+    position: relative;
+}
+
+.middle-top {
+    margin-bottom: 300px;
+}
+
+.middle-bottom {
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
 
 
 
