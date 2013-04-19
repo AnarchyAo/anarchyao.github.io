@@ -668,8 +668,25 @@ body {
     width: 50px;
 }
 
+.menu {
+    background-color: #515151;
+}
+
+.twitter {
+    background-color: #4099FF;
+}
+
+.facebook {
+    background-color: #3B5998;
+}
+
 .videoplayer {
     padding: 0 300px 0 150px;
+}
+
+.videoplayer--object {
+    width: 100%
+    height: 100%;
 }
 
 .chat {
