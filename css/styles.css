@@ -705,7 +705,8 @@ body {
 }
 
 .videoplayer {
-    padding: 0 300px 0 150px;
+    padding-right: 300px;
+    padding-left: 150px;
 }
 
 .videoplayer--object {
