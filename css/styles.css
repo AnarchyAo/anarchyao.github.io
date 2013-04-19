@@ -698,9 +698,9 @@ body {
     width: 300px;
 }
 
-.menu:hover + .videoplayer,
-.twitter:hover + .videoplayer,
-.facebook:hover + .videoplayer {
+.menu:hover ~ .videoplayer,
+.twitter:hover ~ .videoplayer,
+.facebook:hover ~ .videoplayer {
     padding-left: 400px;
 }
 
