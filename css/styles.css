@@ -637,6 +637,9 @@ table {
 
 
 
+html, body {
+    height: 100%;
+}
 
 footer {
     position: absolute;  bottom: 0;  width: 50%;  margin: 0 25%;
@@ -644,7 +647,8 @@ footer {
 
 body {
     text-align: center;
-    color: #222;
+    color: #333;
+    background-color: #f0f0f0;
 }
 
 .content {
