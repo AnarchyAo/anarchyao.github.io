@@ -638,7 +638,28 @@ table {
 
 
 
+footer {
+    position: absolute;  bottom: 0;  width: 50%;  margin: 0 25%;
+}
 
+body {
+    text-align: center;
+    color: #222;
+}
+
+.content {
+    padding-top: 4em;
+    font-size: 2em;
+}
+
+h1 {
+    margin-bottom: 0em;
+}
+
+.content p {
+    font-size: 1.29em;
+    margin-top: 0em;
+}
 
 
 
