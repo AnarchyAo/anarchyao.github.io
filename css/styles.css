@@ -639,7 +639,7 @@ textarea {
 
 * {
   box-sizing: border-box;
-  transition: width .5s, padding .5s, background .5s, background-image 1s;
+  transition: width .5s, padding .5s, background .5s;
 }
 
 
@@ -674,7 +674,7 @@ body {
 }
 
 .menu:hover {
-    background: #515151 url(/img/m_h.png) center center no-repeat;
+    background-color: #515151;
 }
 
 .twitter {
@@ -682,7 +682,7 @@ body {
 }
 
 .twitter:hover {
-    background: #4099FF url(/img/t_h.png) center center no-repeat;
+    background-color: #4099FF;
 }
 
 .facebook {
@@ -690,7 +690,7 @@ body {
 }
 
 .facebook:hover {
-    background: #3B5998 url(/img/f_h.png) center center no-repeat;
+    background-color: #3B5998;
 }
 
 .menu:hover,
