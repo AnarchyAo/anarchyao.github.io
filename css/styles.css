@@ -654,7 +654,7 @@ body {
 }
 
 .front .content,
-.menu,
+.youtube,
 .twitter,
 .facebook,
 .chat,
@@ -662,19 +662,29 @@ body {
     height: 100%;
 }
 
-.menu,
+.youtube,
 .twitter,
 .facebook {
     float: left;
     width: 50px;
 }
 
-.menu {
+.youtube {
     background: #363636 url(/img/m.png) center center no-repeat;
 }
 
-.menu:hover {
+.youtube:hover {
     background-color: #515151;
+}
+
+.youtube-videos {
+    background-color: #444;
+    list-style: none;
+    margin-left: 50px;
+    padding: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .twitter {
@@ -683,7 +693,6 @@ body {
 
 .twitter:hover {
     background-color: #4099FF;
-    background-position: 13px center;
 }
 
 .twitter-timeline {
@@ -699,13 +708,14 @@ body {
     background-color: #3B5998;
 }
 
-.menu:hover,
+.youtube:hover,
 .twitter:hover,
 .facebook:hover {
     width: 300px;
+    background-position: 13px center;
 }
 
-.menu:hover ~ .videoplayer,
+.youtube:hover ~ .videoplayer,
 .twitter:hover ~ .videoplayer,
 .facebook:hover ~ .videoplayer {
     padding-left: 400px;

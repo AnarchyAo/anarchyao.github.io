@@ -1,5 +1,5 @@
 function show_my_videos(data){
-	html = ['<ul id="youtube-videos">'];
+	html = ['<ul class="youtube-videos">'];
 	$(data.feed.entry).each(function(entry){
 		url = this.link[0].href;
 		url_thumbnail = this.media$group.media$thumbnail[3].url;
@@ -13,7 +13,7 @@ function show_my_videos(data){
 }
 $.ajax({
 	type: "GET",
-	url: "http://gdata.youtube.com/feeds/users/anarchyao2/uploads?alt=json-in-script&format=5",
+	url: "http://gdata.youtube.com/feeds/users/anarchyao2/uploads?alt=json&format=5",
 	cache: false,
 	dataType:'jsonp',
 	success: function(data){
