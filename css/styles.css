@@ -685,6 +685,11 @@ body {
     background-color: #4099FF;
 }
 
+.twitter-timeline {
+    padding-right: 50px;
+    height: 100%;
+}
+
 .facebook {
     background: #29344d url(/img/f.png) center center no-repeat;
 }
