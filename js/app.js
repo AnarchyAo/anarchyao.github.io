@@ -13,7 +13,7 @@ function show_my_videos(data){
 }
 $.ajax({
 	type: "GET",
-	url: "http://gdata.youtube.com/feeds/users/anarchyao/uploads?alt=json-in-script&format=5",
+	url: "http://gdata.youtube.com/feeds/users/anarchyao2/uploads?alt=json-in-script&format=5",
 	cache: false,
 	dataType:'jsonp',
 	success: function(data){
