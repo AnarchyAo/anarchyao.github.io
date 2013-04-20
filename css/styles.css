@@ -794,11 +794,11 @@ body {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(127,127,127,0.8);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(255,255,255,0.4);
+    background: rgba(127,127,127,0.4);
 }
 
 
