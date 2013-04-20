@@ -683,11 +683,10 @@ body {
 
 .twitter:hover {
     background-color: #4099FF;
-    background-position: 25px center;
+    background-position: 13px center;
 }
 
 .twitter-timeline {
-    padding: 10px 0;
     width: 250px;
     margin-left: 50px;
 }
