@@ -21,12 +21,13 @@ $.ajax({
 	success: function(data){
 		show_my_videos(data);
 
-		// console.log(data);
-		// console.log(data.feed.entry);
-		// $(data.feed.entry).each(function(){
-		// 	console.log(this.link[0].href);
-		// 	console.log(this.media$group.media$thumbnail[3].url);
-		// 	console.log(this.media$group.media$description.$t);
-		// });
-  }
+		console.log(data);
+		console.log(data.feed.entry);
+		$(data.feed.entry).each(function(){
+			console.log(this.link[0].href);
+			console.log(this.media$group.media$thumbnail[3].url);
+			console.log(this.media$group.media$description.$t);
+			console.log(this.media$group.media$title.$t);
+		});
+	}
 });
