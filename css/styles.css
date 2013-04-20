@@ -682,14 +682,25 @@ body {
     list-style: none;
     margin-left: 50px;
     margin-top: 0;
-    padding: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .youtube-videos li {
+    margin: 10px 0;
+}
 
+.youtube-videos a {
+    display: block;
+}
+.youtube-videos p {
+    width: 190px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    padding: 10px;
 }
 
 .twitter {
@@ -713,14 +724,20 @@ body {
     background-color: #3B5998;
 }
 
-.youtube:hover,
+.youtube:hover {
+    width: 400px;
+}
+
 .twitter:hover,
 .facebook:hover {
     width: 300px;
     background-position: 13px center;
 }
 
-.youtube:hover ~ .videoplayer,
+.youtube:hover ~ .videoplayer{
+    padding-left: 500px;
+}
+
 .twitter:hover ~ .videoplayer,
 .facebook:hover ~ .videoplayer {
     padding-left: 400px;
