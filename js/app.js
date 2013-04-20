@@ -1,0 +1,1 @@
+$('twitter-timeline').height = $('.twitter').height();
