@@ -726,6 +726,7 @@ body {
 
 .youtube:hover {
     width: 400px;
+    background-position: 13px center;
 }
 
 .twitter:hover,
