@@ -671,6 +671,7 @@ body {
 
 .menu {
     background-color: #363636;
+    background-image: background:url(/img/m.png) center center no-repeat;
 }
 
 .menu:hover {
@@ -679,6 +680,7 @@ body {
 
 .twitter {
     background-color: #1C334D;
+    background-image: background:url(/img/t.png) center center no-repeat;
 }
 
 .twitter:hover {
@@ -687,6 +689,7 @@ body {
 
 .facebook {
     background-color: #29344d;
+    background-image: background:url(/img/f.png) center center no-repeat;
 }
 
 .facebook:hover {
