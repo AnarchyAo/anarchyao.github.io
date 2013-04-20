@@ -4,8 +4,10 @@ function show_my_videos(data){
 		url = this.link[0].href;
 		url_thumbnail = this.media$group.media$thumbnail[3].url;
 		description = this.media$group.media$description.$t;
+		title = this.media$group.media$title.$t;
 		html.push('<li><a href="'+url+'">');
 		html.push('<img src="'+url_thumbnail+'" alt="'+description+'">');
+		html.push('<p>'+title+'</p>');
 		html.push('</a></li>');
 	});
 	html.push('</ul>');

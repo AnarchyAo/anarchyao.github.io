@@ -681,10 +681,15 @@ body {
     background-color: #444;
     list-style: none;
     margin-left: 50px;
+    margin-top: 0;
     padding: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.youtube-videos li {
+
 }
 
 .twitter {
