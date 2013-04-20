@@ -639,7 +639,7 @@ textarea {
 
 * {
   box-sizing: border-box;
-  transition: width .5s, padding .5s, background .5s, background-image .5s;
+  transition: width .5s, padding .5s, background .5s, background-image 1s;
 }
 
 
