@@ -670,12 +670,11 @@ body {
 }
 
 .menu {
-    background: #363636 url(/img/m.png) center center no-repeat;;
+    background: #363636 url(/img/m.png) center center no-repeat;
 }
 
 .menu:hover {
-    background-color: #515151;
-    background-image: none;
+    background: #515151 url(/img/m_h.png) center center no-repeat;
 }
 
 .twitter {
@@ -683,8 +682,7 @@ body {
 }
 
 .twitter:hover {
-    background-color: #4099FF;
-    background-image: none;
+    background: #4099FF url(/img/t_h.png) center center no-repeat;
 }
 
 .facebook {
@@ -692,8 +690,7 @@ body {
 }
 
 .facebook:hover {
-    background-color: #3B5998;
-    background-image: none;
+    background: #3B5998 url(/img/f_h.png) center center no-repeat;
 }
 
 .menu:hover,
