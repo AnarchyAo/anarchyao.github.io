@@ -9,7 +9,7 @@ function show_my_videos(data){
 		html.push('</a></li>');
 	});
 	html.push('</ul>');
-	$("#videos").html(html.join(''));
+	$("#youtube").html(html.join(''));
 }
 $.ajax({
 	type: "GET",
@@ -18,7 +18,7 @@ $.ajax({
 	dataType:'jsonp',
 	success: function(data){
 		show_my_videos(data);
-		//If you want to see in console...
+
 		// console.log(data);
 		// console.log(data.feed.entry);
 		// $(data.feed.entry).each(function(){
