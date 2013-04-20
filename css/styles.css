@@ -695,7 +695,19 @@ body {
 
 .youtube-videos a {
     display: block;
+    color: #ddd;
 }
+
+.youtube-videos a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+.youtube-videos a:active {
+    color: #222;
+    background-color: #ddd;
+}
+
 .youtube-videos p {
     width: 190px;
     display: inline-block;
@@ -714,6 +726,7 @@ body {
 
 .twitter-timeline {
     width: 250px;
+    min-width:
     margin-left: 50px;
 }
 
