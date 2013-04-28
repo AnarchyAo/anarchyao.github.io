@@ -10,7 +10,6 @@ $.ajax({type:"GET",url:"http://gdata.youtube.com/feeds/users/anarchyao2/uploads?
 
 var container = document.querySelector('#container');
 var pckry = new Packery( container, {
-  // options
   itemSelector: '.item',
   gutter: 10
 });
