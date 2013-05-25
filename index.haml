@@ -1,19 +1,30 @@
 !!!
 
-%head
-  %meta{charset: "utf-8"}
-  %meta{"http-equiv" => "X-UA-Compatible", content: "IE=edge,chrome=1"}
-  %meta{name: "viewport", content: "width=device-width"}
-  %title Andrew 'AnarchyAO' Shifflett
-  %link{rel: "stylesheet", href: "css/style.css"}
+%html.no-js
 
-%body
-  %h1 Hello, I'm Andrew.
-  :markdown
-    You probably know me as **AnarchyAO** and you know what I do. If you don't, then find me on [Twitter](https://twitter.com/anarchyao), [LinkedIn](http://www.linkedin.com/in/anarchyao) or [Facebook](https://www.facebook.com/pages/Anarchyao/394524577312455) and we'll have a chat.
+  %head
+    %meta{charset: "utf-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", content: "IE=edge,chrome=1"}
+    %meta{name: "viewport", content: "width=device-width"}
+    %title Andrew 'AnarchyAO' Shifflett
+    %link{rel: "stylesheet", href: "css/style.css"}
 
-  :javascript
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+  %body
+    /[if lt IE 8]
+      .chromeframe
+        :markdown
+          You are using an **outdated** browser. Please [upgrade your browser](http://browsehappy.com/) or [activate Google Chrome Frame](http://www.google.com/chromeframe/?redirect=true) to improve your experience.
+
+    .intro
+      %h1 Hello, I'm Andrew.
+      :markdown
+        You probably know me as **AnarchyAO** and you know what I do. If you don't — reach out to me and we'll chat.
+      %a{href: "https://twitter.com/anarchyao"} Twitter
+      %a{href: "http://www.linkedin.com/in/anarchyao"} LinkedIn
+      %a{href: "https://www.facebook.com/pages/Anarchyao/394524577312455"} Facebook
+
+    :javascript
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
