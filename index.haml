@@ -31,6 +31,8 @@
           %param{name: "allowNetworking", value: "all"}
           %param{name: "movie", value: "http://www.twitch.tv/widgets/live_embed_player.swf"}
           %param{name: "flashvars", value: "hostname=www.twitch.tv&channel=anarchyao&auto_play=true&start_volume=25"}
+      .stream-chat
+        %iframe{frameborder: "0", scrolling: "no", src: "http://www.twitch.tv/chat/embed?channel=anarchyao&popout_chat=true"}
 
     %script{src: "js/main.js"}
     :javascript
