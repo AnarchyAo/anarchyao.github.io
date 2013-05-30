@@ -9,21 +9,13 @@
     %link{rel: "stylesheet", href: "css/style.css"}
     %script{src: "js/vendor/modernizr.js"}
 
-  %body
+  %body.page
     /[if lt IE 8]
       .chromeframe
         :markdown
           You are using an **outdated** browser. Please [upgrade your browser](http://browsehappy.com/) or [activate Google Chrome Frame](http://www.google.com/chromeframe/?redirect=true) to improve your experience.
 
     .top
-      .intro
-        %h1 Hello, I'm Andrew.
-        :markdown
-          You probably know me as **AnarchyAO** and you know what I do. If you don't — reach out to me and we'll chat.
-        %a{href: "https://twitter.com/anarchyao"} Twitter
-        %a{href: "http://www.linkedin.com/in/anarchyao"} LinkedIn
-        %a{href: "https://www.facebook.com/pages/Anarchyao/394524577312455"} Facebook
-
       .videoplayer
         %object{type: "application/x-shockwave-flash", data: "http://www.twitch.tv/widgets/live_embed_player.swf?channel=anarchyao"}
           %param{name: "allowFullScreen", value: "true"}
@@ -31,8 +23,18 @@
           %param{name: "allowNetworking", value: "all"}
           %param{name: "movie", value: "http://www.twitch.tv/widgets/live_embed_player.swf"}
           %param{name: "flashvars", value: "hostname=www.twitch.tv&channel=anarchyao&auto_play=true&start_volume=25"}
-      .stream-chat
-        %iframe{frameborder: "0", scrolling: "no", src: "http://www.twitch.tv/chat/embed?channel=anarchyao&popout_chat=true"}
+
+      .intro-and-chat
+        .intro
+          %h1 Hello, I'm Andrew.
+          :markdown
+            You probably know me as **AnarchyAO** and you know what I do. If you don't — reach out to me and we'll chat.
+          %a{href: "https://twitter.com/anarchyao"} Twitter
+          %a{href: "http://www.linkedin.com/in/anarchyao"} LinkedIn
+          %a{href: "https://www.facebook.com/pages/Anarchyao/394524577312455"} Facebook
+
+        .stream-chat
+          %iframe{frameborder: "0", scrolling: "no", src: "http://www.twitch.tv/chat/embed?channel=anarchyao&popout_chat=true"}
 
     %script{src: "js/main.js"}
     :javascript
