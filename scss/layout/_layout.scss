@@ -1,31 +1,11 @@
 /*
- * Use Susy for the grid.
- * http://susy.oddbird.net/
+ * Use Neat for the grid.
+ * http://neat.bourbon.io/
  *
  * Requires Compass
  */
-@import "susy";
+@import "neat";
 
 /*
- * Susy config
+ * TODO: Neat config
  */
-$total-columns  : 12;
-$column-width   : 7.41666666%;
-$gutter-width   : 1%;
-$grid-padding   : $gutter-width;
-
-.page {
-    @include container;
-}
-
-.top {
-    max-height: 100%;
-}
-
-.videoplayer {
-    @include span-columns(9,12);
-}
-
-.intro-and-chat {
-    @include span-columns(3 omega,12);
-}
