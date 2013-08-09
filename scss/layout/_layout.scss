@@ -5,10 +5,40 @@
  * Requires Bourbon
  */
 @import "neat";
+$max-width: 100%;
 
 /*
- * TODO: Neat config
+ * Overal layout.
  */
+body {
+    @include outer-container;
+}
+
+.top {
+    @include span-columns(12);
+    background-color: #d5eefb;
+}
+
+.videoplayer {
+    @include span-columns(9);
+    background-color: #aadbf5;
+}
+
+.intro-and-chat {
+    @include span-columns(3);
+    background-color: #aadbf5;
+    height: 100%;
+}
+
+.stream-chat {
+    height: 75%;
+
+    iframe {
+        width: 100%;
+        min-height: 335px;
+    }
+}
+
 
 /*
  * Twitch.tv stream videoplayer.
