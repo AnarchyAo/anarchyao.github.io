@@ -10,17 +10,24 @@
  * TODO: Neat config
  */
 
-.videoplayer {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    width: 100%;
+/*
+ * Twitch.tv stream videoplayer.
+ * http://alistapart.com/article/creating-intrinsic-ratios-for-video
+ * http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ */
+.videoplayer__embed {
+    width: 100%;            // Fill whole width of the parent element.
+    padding-bottom: 56.25%; // 9:16 = 0.5625 (for a 16:9 video). Padding is
+                            //   calculated from the width of the element.
+    padding-top: 30px;      // Height of videoplayer UI chrome.
+    height: 0;              // Padding is our height.
+    overflow: hidden;       // Hide scrollbars, if they'll appear.
+    position: relative;     // Give positioning context for children of this
+                            //   element.
 
     object,
     embed {
-        position: absolute;
+        position: absolute; // Position itself over parent's padding.
         top: 0;
         left: 0;
         width: 100%;
