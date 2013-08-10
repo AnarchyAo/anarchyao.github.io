@@ -6,7 +6,7 @@
  * Image replacement
  */
 
-.ir {
+%ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -14,7 +14,7 @@
     *text-indent: -9999px;
 }
 
-.ir:before {
+%ir:before {
     content: "";
     display: block;
     width: 0;
@@ -25,7 +25,7 @@
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
+%hidden {
     display: none !important;
     visibility: hidden;
 }
@@ -34,7 +34,7 @@
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden {
+%visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -50,8 +50,8 @@
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+%visuallyhidden.focusable:active,
+%visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -64,7 +64,7 @@
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
+%invisible {
     visibility: hidden;
 }
 
@@ -80,21 +80,12 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+%clearfix:before,
+%clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.clearfix:after {
+%clearfix:after {
     clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
 }

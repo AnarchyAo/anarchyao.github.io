@@ -1,44 +1,57 @@
 /*
- * Use Neat for the grid.
- * http://neat.bourbon.io/
+ * Use Susy for the grid.
+ * http://susy.oddbird.net/
  *
- * Requires Bourbon
+ * Requires Compass
  */
-@import "neat";
-$max-width: 100%;
+
+@import "susy";
+
+// A Fluid Grid based on 960gs
+$total-columns: 12;
+$column-width: 70px;
+$gutter-width: 0px;
+$grid-padding: $gutter-width;
+
+$container-style: fluid;
+
 
 /*
  * Overal layout.
  */
-body {
-    @include outer-container;
+.page {
+    @include container;
 }
 
-.top {
-    @include span-columns(12);
-    background-color: #d5eefb;
+.stream {
+    @extend %clearfix;
+    @include span-columns(12,12);
+    display: table-row;
 }
 
-.videoplayer {
-    @include span-columns(9);
-    background-color: #aadbf5;
-}
+    .videoplayer {
+        @include span-columns(9,12);
+        display: table-cell;
+    }
 
-.intro-and-chat {
-    @include span-columns(3);
-    background-color: #aadbf5;
-    height: 100%;
-}
+    .chat {
+        @include span-columns(3,12);
+        display: table-cell;
 
-.stream-chat {
-    height: 75%;
+        iframe {
+            width: 100%;
+            min-height: 335px;
+        }
+    }
 
-    iframe {
-        width: 100%;
-        min-height: 335px;
+.about {
+    clear: both;
+    & > * {
+        float: left;
+        margin: .5% 1% 0 1%;
+        line-height: 2rem;
     }
 }
-
 
 /*
  * Twitch.tv stream videoplayer.
