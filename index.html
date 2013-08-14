@@ -1,21 +1,50 @@
----
-layout: default
-class: front
----
-<section class="content" id="container">
-  <div class="youtube js-toggle" id="youtube"></div>
-  <div class="facebook js-toggle">
-  </div>
-  <div class="twitter js-toggle" id="twitter"></div>
-  <script>
-    var twitterh = document.getElementById('twitter').offsetHeight + 2;
-    document.getElementById('twitter').innerHTML = '<a class="twitter-timeline" href="https://twitter.com/AnarchyAo" data-widget-id="325671052749447168" data-theme="dark" data-chrome="noborders" height="' + twitterh + '">Tweets by @AnarchyAo</a>';
-  </script>
-  <div class="chat">
-    <iframe frameborder="0" scrolling="no" src="http://www.twitch.tv/chat/embed?channel=anarchyao&popout_chat=true"></iframe>
-  </div>
-  <div class="videoplayer">
-    <object type="application/x-shockwave-flash" class="videoplayer--object" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=anarchyao" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=anarchyao&auto_play=true&start_volume=25" /></object>
-  </div>
-</section>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width" name="viewport">
+    <title>
+      Andrew 'AnarchyAO' Shifflett
+    </title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body class="page">
+    <!--[if lte IE 8]>
+    <div class="chromeframe">
+      <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      
+    </div>
+    <![endif]-->
+    <div class="stream">
+      <div class="videoplayer">
+        <div class="videoplayer__embed">
+          <object data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=anarchyao" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=anarchyao&amp;auto_play=true&amp;start_volume=25"></object>
+        </div>
+      </div>
+      <div class="chat">
+        <iframe frameborder="0" scrolling="no" src="http://www.twitch.tv/chat/embed?channel=anarchyao&amp;popout_chat=true"></iframe>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about__inner">
+        <object class="logo" data="img/anarchyao-logo.svg" type="image/svg+xml">AnarchyAo logo</object>
+        <h1>
+          Hello, I'm Andrew.
+        </h1>
+        <p>
+          You probably know me as <em>AnarchyAO</em> and you know what I do. If you don't — reach out to me and we'll chat.
+        </p>
+        <a class="social twitter" href="https://twitter.com/anarchyao">Twitter</a><a class="social linkedin" href="http://www.linkedin.com/in/anarchyao">LinkedIn</a><a class="social facebook" href="https://www.facebook.com/pages/Anarchyao/394524577312455">Facebook</a>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

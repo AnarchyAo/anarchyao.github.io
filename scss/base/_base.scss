@@ -1,0 +1,59 @@
+@import "compass";
+
+@import "normalize";
+@import "h5bp";
+@import "helpers";
+@import "print";
+
+$main-color: #ef3c39;  // Orange-y
+$dark-color: #333;     // Dark gray
+$light-color: #f2f2f2; // Almost white
+
+/*
+ * Apply different sizing model
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* {
+	transition: all .1s ease-in;
+}
+
+.page {
+	background-color: $dark-color;
+	color: $main-color;
+}
+
+.stream {
+	background-color: darken($dark-color, 10%);
+}
+
+.about {
+	text-align: center;
+}
+
+	.logo {
+		width: 300px;
+		height: 300px;
+	}
+
+	.no-svg .logo {
+		background-image: url('img/anarchyao-logo.png');
+	}
+
+	.social {
+		padding: .7em;
+		color: $main-color;
+
+		&:hover,
+		&:active {
+			color: darken($main-color, 10%);
+			background-color: $light-color;
+		}
+	}
