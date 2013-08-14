@@ -377,44 +377,9 @@ table {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
 body {
   font-size: 1em;
   line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
 }
 
 /*
@@ -422,22 +387,6 @@ hr {
  */
 img {
   vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical;
 }
 
 /* ==========================================================================
@@ -563,6 +512,10 @@ textarea {
   box-sizing: border-box;
 }
 
+* {
+  transition: all .1s ease-in;
+}
+
 .page {
   background-color: #333333;
   color: #ef3c39;
@@ -586,10 +539,12 @@ textarea {
 }
 
 .social {
+  padding: .7em;
   color: #ef3c39;
 }
 .social:hover, .social:active {
-  color: #b3110f;
+  color: #e31612;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: 950px) {
@@ -604,6 +559,9 @@ textarea {
   }
 }
 
+.stream {
+  width: 100%;
+}
 @media (min-width: 950px) {
   .stream {
     display: table;
@@ -629,10 +587,11 @@ textarea {
 }
 
 .chat {
-  padding: .5% .5% .5% 0;
+  padding: .5%;
 }
 @media (min-width: 950px) {
   .chat {
+    padding-left: 0;
     width: 25%;
   }
 }
@@ -655,7 +614,7 @@ textarea {
 
 .about__inner {
   margin: auto;
-  padding-top: 1em;
+  padding: 1em 0;
 }
 @media (min-width: 950px) {
   .about__inner {
@@ -668,12 +627,10 @@ textarea {
   }
 }
 
-.social {
-  padding: .3em;
-}
-
 /*
- * Twitch.tv stream videoplayer.
+ * Videoplayer (constrained to aspect ration).
+ * Optimized for Twitch.tv embeded player.
+ *
  * http://alistapart.com/article/creating-intrinsic-ratios-for-video
  * http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
  */

@@ -5,9 +5,9 @@
 @import "helpers";
 @import "print";
 
-$main-color: #ef3c39;
-$dark-color: #333;
-$light-color: #f2f2f2;
+$main-color: #ef3c39;  // Orange-y
+$dark-color: #333;     // Dark gray
+$light-color: #f2f2f2; // Almost white
 
 /*
  * Apply different sizing model
@@ -19,6 +19,10 @@ $light-color: #f2f2f2;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+* {
+	transition: all .1s ease-in;
 }
 
 .page {
@@ -44,10 +48,12 @@ $light-color: #f2f2f2;
 	}
 
 	.social {
+		padding: .7em;
 		color: $main-color;
 
 		&:hover,
 		&:active {
-			color: darken($main-color, 20%);
+			color: darken($main-color, 10%);
+			background-color: $light-color;
 		}
 	}
