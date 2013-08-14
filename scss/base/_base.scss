@@ -5,6 +5,10 @@
 @import "helpers";
 @import "print";
 
+$main-color: #ef3c39;
+$dark-color: #333;
+$light-color: #f2f2f2;
+
 /*
  * Apply different sizing model
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -16,3 +20,34 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+
+.page {
+	background-color: $dark-color;
+	color: $main-color;
+}
+
+.stream {
+	background-color: darken($dark-color, 10%);
+}
+
+.about {
+	text-align: center;
+}
+
+	.logo {
+		width: 300px;
+		height: 300px;
+	}
+
+	.no-svg .logo {
+		background-image: url('img/anarchyao-logo.png');
+	}
+
+	.social {
+		color: $main-color;
+
+		&:hover,
+		&:active {
+			color: darken($main-color, 20%);
+		}
+	}

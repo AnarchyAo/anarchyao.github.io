@@ -1,56 +1,82 @@
-/*
- * Use Susy for the grid.
- * http://susy.oddbird.net/
- *
- * Requires Compass
- */
+$desktop: "min-width: 950px";
 
-@import "susy";
+html {
 
-$total-columns: 12;
-$column-width: 80px;
-$gutter-width: 0px;
-$grid-padding: $gutter-width;
+    @media ($desktop) {
+        height: 100%;
+    }
+}
 
-$container-style: fluid;
-
-
-/*
- * Overal layout.
- */
 .page {
-    @include container;
+
+    @media ($desktop) {
+        height: 200%;
+    }
 }
 
 .stream {
-    @extend %clearfix;
-    @include span-columns(12,12);
-    display: table-row;
+
+    @media ($desktop) {
+        display: table;
+        height: 50%;
+    }
 }
 
+    .videoplayer,
+    .chat {
+
+        @media ($desktop) {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
     .videoplayer {
-        @include span-columns(9,12);
-        display: table-cell;
+        padding: .5%;
+
+        @media ($desktop) {
+            width: 75%;
+        }
     }
 
     .chat {
-        @include span-columns(3,12);
-        display: table-cell;
+        padding: .5% .5% .5% 0;
+
+        @media ($desktop) {
+            width: 25%;
+        }
 
         iframe {
             width: 100%;
+            height: 100%;
+            min-width: 300px;
             min-height: 335px;
         }
     }
 
 .about {
-    clear: both;
-    & > * {
-        float: left;
-        margin: .5% 1% 0 1%;
-        line-height: 2rem;
+    font-size: 1.2em;
+
+    @media ($desktop) {
+        height: 50%;
+        position: relative;
     }
 }
+
+    .about__inner {
+        margin: auto;
+        padding-top: 1em;
+
+        @media ($desktop) {
+            height: 66%;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+        }
+    }
+
+        .social {
+          padding: .3em;
+        }
 
 /*
  * Twitch.tv stream videoplayer.

@@ -480,18 +480,6 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.stream:before,
-.stream:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.stream:after {
-  clear: both;
-}
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -575,63 +563,113 @@ textarea {
   box-sizing: border-box;
 }
 
-/*
- * Use Susy for the grid.
- * http://susy.oddbird.net/
- *
- * Requires Compass
- */
-/*
- * Overal layout.
- */
 .page {
-  *zoom: 1;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
+  background-color: #333333;
+  color: #ef3c39;
 }
 
 .stream {
-  width: 100%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
-  display: table-row;
+  background-color: #1a1a1a;
+}
+
+.about {
+  text-align: center;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+}
+
+.no-svg .logo {
+  background-image: url("img/anarchyao-logo.png");
+}
+
+.social {
+  color: #ef3c39;
+}
+.social:hover, .social:active {
+  color: #b3110f;
+}
+
+@media (min-width: 950px) {
+  html {
+    height: 100%;
+  }
+}
+
+@media (min-width: 950px) {
+  .page {
+    height: 200%;
+  }
+}
+
+@media (min-width: 950px) {
+  .stream {
+    display: table;
+    height: 50%;
+  }
+}
+
+@media (min-width: 950px) {
+  .videoplayer,
+  .chat {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 .videoplayer {
-  width: 75%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
-  display: table-cell;
+  padding: .5%;
+}
+@media (min-width: 950px) {
+  .videoplayer {
+    width: 75%;
+  }
 }
 
 .chat {
-  width: 25%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
-  display: table-cell;
+  padding: .5% .5% .5% 0;
+}
+@media (min-width: 950px) {
+  .chat {
+    width: 25%;
+  }
 }
 .chat iframe {
   width: 100%;
+  height: 100%;
+  min-width: 300px;
   min-height: 335px;
 }
 
 .about {
-  clear: both;
+  font-size: 1.2em;
 }
-.about > * {
-  float: left;
-  margin: .5% 1% 0 1%;
-  line-height: 2rem;
+@media (min-width: 950px) {
+  .about {
+    height: 50%;
+    position: relative;
+  }
+}
+
+.about__inner {
+  margin: auto;
+  padding-top: 1em;
+}
+@media (min-width: 950px) {
+  .about__inner {
+    height: 66%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.social {
+  padding: .3em;
 }
 
 /*

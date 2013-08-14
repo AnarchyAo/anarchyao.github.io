@@ -29,13 +29,14 @@ html.no-js
         iframe frameborder="0" scrolling="no" src="http://www.twitch.tv/chat/embed?channel=anarchyao&popout_chat=true"
 
     .about
-      h1 Hello, I'm Andrew.
-      p You probably know me as <em>AnarchyAO</em> and you know what I do. If you don't — reach out to me and we'll chat.
-      a href="https://twitter.com/anarchyao" Twitter
-      a href="http://www.linkedin.com/in/anarchyao" LinkedIn
-      a href="https://www.facebook.com/pages/Anarchyao/394524577312455" Facebook
+      .about__inner
+        object type="image/svg+xml" data="img/anarchyao-logo.svg" class="logo" AnarchyAo logo
+        h1 Hello, I'm Andrew.
+        p You probably know me as <em>AnarchyAO</em> and you know what I do. If you don't — reach out to me and we'll chat.
+        a.social.twitter href="https://twitter.com/anarchyao" Twitter
+        a.social.linkedin href="http://www.linkedin.com/in/anarchyao" LinkedIn
+        a.social.facebook href="https://www.facebook.com/pages/Anarchyao/394524577312455" Facebook
 
-    / All authored JS
     script src="js/main.js"
 
     / Google Analytics
