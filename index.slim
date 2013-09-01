@@ -12,8 +12,7 @@ html.no-js
     meta property="og:description" content="Live with Andrew 'AnarchyAo' Shifflett"
     meta property="og:see_also" content="http://www.ustream.tv/channel/anarchyao"
     title Andrew 'AnarchyAO' Shifflett
-    css:
-      *,::before,::after{box-sizing:border-box}html{font-family:sans-serif;height:100%}body{font-size:1em;line-height:1.4;margin:0}.page{background-color:#333;color:#ef3c39;height:200%}.stream{background-color:#1a1a1a;width:100%;display:table;height:50%}.videoplayer,.chat{display:table-cell;vertical-align:middle}.videoplayer{width:75%;padding:.5%}.videoplayer__embed{width:100%;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;position:relative}.videoplayer__embed object,.videoplayer__embed embed,.videoplayer__embed iframe{position:absolute;top:0;left:0;width:100%;height:100%}.chat{width:25%;height:100%;padding:.5% .5% .5% 0}.chat iframe{width:100%;height:100%;min-width:300px;min-height:335px}
+    link rel="stylesheet" href="css/style.css"
 
   body.page
     /[if lte IE 8]
@@ -36,10 +35,6 @@ html.no-js
         a.social.twitter href="https://twitter.com/anarchyao" Twitter
         a.social.linkedin href="http://www.linkedin.com/in/anarchyao" LinkedIn
         a.social.facebook href="https://www.facebook.com/pages/Anarchyao/394524577312455" Facebook
-
-    / Inject stylesheet
-    javascript:
-      link=document.createElement("link");link.href="css/style.css";link.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(link);
 
     / Google Analytics
     javascript:
