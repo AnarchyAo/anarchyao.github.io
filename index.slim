@@ -39,7 +39,9 @@ html.no-js
 
     / Inject stylesheet
     javascript:
-      link=document.createElement("link");link.href="css/style.css";link.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(link);
+      window.onload=function(){link=document.createElement("link");link.href="css/style.css";link.rel="stylesheet";document.getElementsByTagName("head")[0].appendChild(link);}
+    noscript
+      link rel="stylesheet" href="css/style.css"
 
     / Google Analytics
     javascript:
