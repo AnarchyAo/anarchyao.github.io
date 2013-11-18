@@ -33,15 +33,10 @@ html.no-js
     .stream
       .videoplayer
         .videoplayer__embed
-          object type="application/x-shockwave-flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=anarchyao"
-            param name="allowFullScreen" value="true"
-            param name="allowScriptAccess" value="always"
-            param name="allowNetworking" value="all"
-            param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf"
-            param name="flashvars" value="hostname=www.twitch.tv&channel=anarchyao&auto_play=true&start_volume=100"
+          iframe src="http://www.ustream.tv/embed/15702667" frameborder="0"
 
       .chat
-        iframe(frameborder="0" scrolling="no" src="http://twitch.tv/chat/embed?channel=anarchyao&amp;popout_chat=true")
+        iframe(frameborder="0" scrolling="no" src="http://www.ustream.tv/socialstream/15702667")
 
     .about
       .about__inner
