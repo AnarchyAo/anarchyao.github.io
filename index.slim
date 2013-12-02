@@ -49,6 +49,11 @@ html.no-js
         a.social.gplus href="https://plus.google.com/107970419109031406507/" Google+
         a.social href="/stats/" IRC stats
 
+    .report#close_report
+        p You can report the stream or content quality by sending your complaints to a <a href="mailto:support@anarchyao.tv">stream adminstrator</a>. <em class="smalltext">(double-click anywhere on this message to close it)</em>
+    javascript:
+      Element.prototype.remove=function(){this.parentElement.removeChild(this)};NodeList.prototype.remove=HTMLCollection.prototype.remove=function(){for(var a=0,c=this.length;a<c;a++)this[a]&&this[a].parentElement&&this[a].parentElement.removeChild(this[a])};var b=document.getElementById("close_report");b.ondblclick=b.remove;
+
     / Google Analytics
     javascript:
       var _gaq=[['_setAccount','UA-43642705-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//stats.g.doubleclick.net/dc.js';s.parentNode.insertBefore(g,s)}(document,'script'))
