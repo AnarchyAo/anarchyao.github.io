@@ -26,9 +26,6 @@ html.no-js
     meta name="twitter:player:height" content="169"
     meta name="twitter:player:width" content="300"
 
-    script src="js/yn.js"
-    javascript:
-      yepnope( 'js/min/main.min.js' );
 
 
   body.page
@@ -59,6 +56,11 @@ html.no-js
       p You can report the stream or content quality by sending your complaints to <a class="report__email" href="mailto:andrew+support@anarchyao.tv">stream adminstrator</a>. <small><em>(double-click anywhere on this message to close it)</em></small>
     javascript:
       Element.prototype.remove=function(){this.parentElement.removeChild(this)};NodeList.prototype.remove=HTMLCollection.prototype.remove=function(){for(var a=0,c=this.length;a<c;a++)this[a]&&this[a].parentElement&&this[a].parentElement.removeChild(this[a])};var b=document.getElementById("close_report");b.ondblclick=b.remove;
+
+    / Additional JS
+    script src="js/yn.js"
+    javascript:
+      yepnope('js/min/main.min.js');
 
     / Google Analytics
     javascript:
