@@ -57,19 +57,3 @@ $light-color: #f2f2f2; // Almost white
 			background-color: $light-color;
 		}
 	}
-
-.report {
-	background-color: hsla(0,0%,20%,.8);
-	color: $light-color;
-
-	padding: 0 .7em;
-	line-height: .3;
-}
-
-	.report__email {
-		color: $light-color;
-
-		&:hover {
-			color: darken($light-color, 10%);
-		}
-	}
