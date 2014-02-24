@@ -22,38 +22,54 @@ $light-color: #f2f2f2; // Almost white
 }
 
 * {
-	transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
 .page {
-	background-color: $dark-color;
-	color: $main-color;
+    background-color: $dark-color;
+    color: $main-color;
 }
 
 .stream {
-	background-color: darken($dark-color, 10%);
+    background-color: darken($dark-color, 10%);
 }
 
 .about {
-	text-align: center;
+    text-align: center;
 }
 
-	.logo {
-		width: 300px;
-		height: 300px;
-	}
+    .logo {
+        width: 300px;
+        height: 300px;
+    }
 
-	.no-svg .logo {
-		background-image: url('img/anarchyao-logo.png');
-	}
+    .no-svg .logo {
+        background-image: url('img/anarchyao-logo.png');
+    }
 
-	.social {
-		padding: .7em;
-		color: $main-color;
+    .social {
+        padding: .7em;
+        color: $main-color;
 
-		&:hover,
-		&:active {
-			color: darken($main-color, 10%);
-			background-color: $light-color;
-		}
-	}
+        &:hover,
+        &:active {
+            color: darken($main-color, 10%);
+            background-color: $light-color;
+        }
+    }
+
+.ribbon {
+    background-color: hsla(0,0%,20%,.8);
+    color: $light-color;
+
+    padding: 0 .7em;
+    line-height: .3;
+
+    a {
+        color: $light-color;
+
+        &:hover {
+            color: darken($light-color, 10%);
+        }
+    }
+}
