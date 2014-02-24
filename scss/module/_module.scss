@@ -9,7 +9,7 @@
     width: 100%;            // Fill whole width of the parent element.
     padding-top: 56.25%;    // 9:16 = 0.5625 (for a 16:9 video). Padding is
                             //   calculated from the width of the element.
-    //padding-bottom: 30px;   // Height of videoplayer UI chrome.
+    padding-bottom: 30px;   // Height of videoplayer UI chrome.
     height: 0;              // Padding is our height.
     overflow: hidden;       // Hide scrollbars, if they'll appear.
     position: relative;     // Give positioning context for children of this
