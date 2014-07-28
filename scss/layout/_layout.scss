@@ -71,18 +71,12 @@ html {
         padding: 1em 0;
 
         @media ($desktop) {
-            height: 66%;
+            height: 53%;
             position: absolute;
             top: 0; left: 0; bottom: 0; right: 0;
         }
     }
 
-.ribbon {
-
-    @media ($desktop) {
-        position: absolute;
-        top: 0;
-
-        width: 100%;
-    }
+.socialLinks {
+    margin-top: 2em;
 }
