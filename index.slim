@@ -37,10 +37,14 @@ html.no-js
     .stream
       .videoplayer
         .videoplayer__embed
-          iframe src="http://www.ustream.tv/embed/15702667?wmode=direct&autoplay=true" frameborder="0"
+          iframe id="stream__embed" src="http://www.ustream.tv/embed/15702667?wmode=direct&autoplay=true" frameborder="0"
 
-      .chat
-        iframe(frameborder="0" scrolling="no" src="http://www.ustream.tv/socialstream/15702667")
+      .sidebar
+        .streamToggles
+          a.streamToggle.streamToggle-active.ustream href="#ustream" Ustream
+          a.streamToggle.hitbox href="#hitbox" HitBox
+        .chat
+          iframe(id="stream__chat" frameborder="0" scrolling="no" src="http://www.ustream.tv/socialstream/15702667")
 
     .about
       .about__inner
@@ -54,6 +58,7 @@ html.no-js
     / Additional JS
     script src="js/yn.js"
     javascript:
+      yepnope('js/vendor/min/zepto.min.js');
       yepnope('js/min/main.min.js');
 
     / Twitter Analytics

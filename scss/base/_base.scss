@@ -34,6 +34,17 @@ $light-color: #f2f2f2; // Almost white
     background-color: darken($dark-color, 10%);
 }
 
+
+.streamToggle {
+    color: darken($light-color, 20%);
+    text-decoration: none;
+}
+.streamToggle:hover,
+.streamToggle-active {
+    color: white;
+    background-color: lighten($dark-color, 10%);
+}
+
 .about {
     text-align: center;
 }
