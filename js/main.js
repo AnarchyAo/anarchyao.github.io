@@ -13,9 +13,9 @@
       'chat': 'http://www.hitbox.tv/embedchat/anarchyao',
       'live_status_url': 'http://api.hitbox.tv/media/live/anarchyao'
     },
-    'twitch': {
-      'video': 'http://www.twitch.tv/anarchyao__tv/embed',
-      'chat': 'http://www.twitch.tv/anarchyao__tv/chat'
+    'align': {
+      'video': 'https://www.ustream.tv/embed/19744186?wmode=direct&volume=0&autoplay=true',
+      'chat': 'http://chatroll.com/embed/chat/ustream-townhall?id=Bjb8vBxpOs_&platform=html&w=$0'
     }
   };
 
