@@ -37,7 +37,6 @@ html {
 
         @media ($desktop) {
             width: 75%;
-            padding: .5% 10%;
         }
     }
 
@@ -51,29 +50,8 @@ html {
         }
     }
 
-        .streamToggles {
-            height: 3%;
-            padding: 0 0.5em;
-            padding-left: 0;
-        }
-            .streamToggle {
-                padding: 0.4em 0.5em;
-                height: 100%;
-            }
-            .streamToggle-live:before {
-                content: "Live";
-                position: relative;
-                top: -2px;
-                padding: 0.15em 0.2em;
-                margin-right: 0.3em;
-                font-size: 0.8em;
-                color: white;
-                background-color: darken(red, 5%);
-                border-radius: 2px;
-            }
-
         .chat {
-            height: 97%;
+            height: 100%;
 
             iframe {
                 width: 100%;

@@ -37,15 +37,11 @@ html.no-js
     .stream
       .videoplayer
         .videoplayer__embed
-          iframe id="stream__embed" src="http://www.ustream.tv/embed/15702667?wmode=direct&autoplay=true" frameborder="0"
+          iframe id="stream__embed" src="http://hitbox.tv/#!/embed/anarchyao?autoplay=true" frameborder="0"
 
-      / .sidebar
-      /   .streamToggles
-      /     a.streamToggle.streamToggle-active.ustream href="#ustream" Ustream
-      /     a.streamToggle.hitbox href="#hitbox" HitBox
-      /     a.streamToggle.align href="#align" Align
-      /   .chat
-      /     iframe(id="stream__chat" frameborder="0" scrolling="no" src="http://www.ustream.tv/socialstream/15702667")
+      .sidebar
+        .chat
+          iframe(id="stream__chat" frameborder="0" scrolling="no" src="http://www.hitbox.tv/embedchat/anarchyao")
 
     .about
       .about__inner
@@ -57,10 +53,10 @@ html.no-js
           a.social.gplus href="https://plus.google.com/107970419109031406507/" Google+
 
     / Additional JS
-    script src="js/yn.js"
-    javascript:
-      yepnope('js/vendor/min/zepto.min.js');
-      yepnope('js/min/main.min.js');
+    / script src="js/yn.js"
+    / javascript:
+    /   yepnope('js/vendor/min/zepto.min.js');
+    /   yepnope('js/min/main.min.js');
 
     / Twitter Analytics
     script src="//platform.twitter.com/oct.js"
